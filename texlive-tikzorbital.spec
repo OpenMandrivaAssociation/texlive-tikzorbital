@@ -1,12 +1,6 @@
-# revision 28561
-# category Package
-# catalog-ctan /graphics/pgf/contrib/tikzorbital
-# catalog-date 2012-12-17 20:44:22 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-tikzorbital
-Version:	20121217
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Atomic and molecular orbitals using TiKZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzorbital
@@ -32,9 +26,8 @@ orbital diagrams.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/tikzorbital/tikzorbital.sty
-%doc %{_texmfdistdir}/doc/latex/tikzorbital/tikzorbital.pdf
-%doc %{_texmfdistdir}/doc/latex/tikzorbital/tikzorbital.tex
+%{_texmfdistdir}/tex/latex/tikzorbital
+%doc %{_texmfdistdir}/doc/latex/tikzorbital
 
 #-----------------------------------------------------------------------
 %prep
