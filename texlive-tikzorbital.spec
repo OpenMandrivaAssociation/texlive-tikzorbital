@@ -1,6 +1,6 @@
 Name:		texlive-tikzorbital
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Atomic and molecular orbitals using TiKZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzorbital
