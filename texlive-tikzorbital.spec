@@ -3,7 +3,7 @@ Version:	36439
 Release:	2
 Summary:	Atomic and molecular orbitals using TiKZ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzorbital
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzorbital
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.doc.r%{version}.tar.xz
