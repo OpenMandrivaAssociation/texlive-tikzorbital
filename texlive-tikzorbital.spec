@@ -1,40 +1,20 @@
-Name:		texlive-tikzorbital
-Version:	36439
-Release:	2
-Summary:	Atomic and molecular orbitals using TiKZ
+%global tl_name tikzorbital
+%global tl_revision 36439
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
+Summary:	Atomic and molecular orbitals using TikZ
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzorbital
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.doc.r%{version}.tar.xz
+License:	lppl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzorbital.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-Atomic s, p and d orbitals may be drawn, as well as molecular
-orbital diagrams.
+Atomic s, p and d orbitals may be drawn, as well as molecular orbital
+diagrams.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/tikzorbital
-%doc %{_texmfdistdir}/doc/latex/tikzorbital
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
